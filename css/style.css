@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,500&family=Titillium+Web:wght@600&display=swap');
+
+/* selector universal*/
+*{
+  font-family: "Roboro" sans-serif;
+	padding: 0;
+	margin: 0;
+}*/
+
+
+/* selectores de etiqueta */
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+   background-image: url(../img/foondo.png);
+    background-attachment: fixed;
+    overflow-x: hidden;
+    overflow-y: ;
+    box-sizing: border-box;
+      }
+
+h1{
+	font-family: 'Bebas Neue', cursive;
+  color: black;
+}
+h2{
+	 font-family: 'Titillium Web', sans-serif;
+   color: black;
+}
+
+h3{
+  font-family: "Roboto" sans-serif;
+}
+
+p{
+	font-family: 'Roboto Flex', sans-serif;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    color: black;
+    font-weight: 400;
+}
+
+/*incio de la botonera*/
+
+.botonera{
+	background-color: rgba(90, 90, 180, 0.3);
+	position: sticky;
+	top: 0;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+   .botonera ol{
+        display: flex;
+}
+
+    .botonera nav ol{
+	          display: flex;
+}  
+
+.botonera ol li{
+    list-style: none;
+    margin-right: 20px;
+  }
+
+  .botonera ul li a{
+      font-size: 1.8rem;
+      text-decoration: none;
+      color: ;
+          background-image: linear-gradient(currentColor, currentColor);
+          background-position: 0% 100%;
+          background-repeat: no-repeat;
+          background-size: 0% 2px;
+          transition: background-size .3s;
+    }
+
+    .botonera ol li a:hover{
+      color: black;
+      font-weight: 600;
+      /*subrayado*/
+      background-size: 100% 2px;
+    }
+
+
+      
+      /*Box model*/
+
+      .pie{
+        padding: 10px 0;
+        text-align: center;
+      }
+      .pie a{
+          text-decoration: none;
+      }
+
+      .pie__icon--sm{
+        width: 60px;
+      }
+
+      .pie__titulo--md{
+        font-size: 1rem;
+      }
+
+      .seccion__img--md{
+      	width: 500px;
+      }
+
+
+
+/*Encabezados BEM*/
+
+      .encabezado__box--white{
+      	background-color: white;
+      	text-align: center;
+      	padding: 5px 0;
+      }
+      .encabezado__img--fluid{
+      	width: 100%;
+      }
+      .encabezadoo__img--fluid{
+        width: 25%;
+      }
+      .encabezadooo__img--fluid{
+        width: 50%;
+      }
+   
+      .nosotros__titulo--xxl{
+
+      }
+
+      .nosotros__titulo--xl{
+
+      }
+      
+      .nosotros__titulo--md{
+      width: 80%;
+	    height: auto;
+	    padding: 50px;
+	/*margin: 50px 100px;*/
+	    margin: 50px auto;
+	    border: dotted rgba(90, 90, 180, 0.3) 10px; 
+	    overflow: auto;
+      }
+
+      .nosotros__index--sm{
+        width: 15%;
+	    height: auto;
+	    padding: 30px;
+	/*margin: 50px 100px;*/
+	    margin: 10px auto;
+	    border: dotted rgba(90, 90, 180, 0.3) 10px; 
+	    overflow: auto;
+      }
+      .nosotros__index--md{
+      	width: 90%;
+      	height: auto;
+      	padding:60px ;
+      	margin: 30px auto;
+      	border: 20px dotted rgba(93, 66, 099, 1.0);
+      	overflow: auto;
+      }
+
+
+
+/* clases camelCase */
+
+.text-black{
+	color: black;
+  text-align: center;
+
+}
+
+.text-center{
+	text-align: center;
+	font-size: 3rem;
+	box-sizing: border-box;
+  margin: 30px auto
+}
+
+.text-right{
+    text-align: right;
+    font-size: 3rem;
+    box-sizing: border-box;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-bold{
+	font-weight: 700;
+}
+
+.bg-light{
+	background-color: #EBE7E7;
+}
+.bg-violet{
+	background-color: #BEADC7;
+}
+.bg-white{
+	background-color: #D6E9EE;
+  width: 30%;
+  height: auto;
+  padding: 5px;
+  /*margin: 50px 100px;*/
+  margin: 20px auto;
+  border: dotted rgba(90, 90, 180, 0.3) 5px; 
+  overflow: auto;
+}
+.bg-blue{
+  background-color: lightblue;
+}
+
+/* selectores de ID */
+
+#{
+	color: darkviolet;
+}
+
+/*flex*/
+.flex-direction{
+
+}
+.flex-rwap{
+
+}
+.flex-flow{
+  
+}
+
+/*productos de hombres*/
+
+#productos h1  
+#productos h2{
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #C8B6CE;
+  font-family: 'Roboto Flex', sans-serif; 
+  margin: 20px 0;
+}
+
+#productos .galeria{
+  margin: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+    #productos .galeria figure{
+      text-align: center;
+      margin: 0 20px;
+      width: 30%;
+}
+
+       #productos .galeria figure img{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+}
+
+       #productos .galeria figure figcaption{
+  font-size: 2.5rem;
+  color: #A9A2C1;
+  padding: 10px 0 ;
+  background-color: white;
+}
+
+      #productos .galeria p.price{
+  color:#636364 ;
+  padding-bottom: 10px;
+  background-color:white ;
+}
+
+/*producto destacado*/
+#productos .destacados article{
+  background-color: #6B49C2;
+  display: flex;
+  align-items: center;
+}
+
+
+  #productos .destacados article p{
+    font-size: 2rem;
+    line-height: 2.4rem;
+    padding: 50px;
+    margin: 20px auto;
+    color: white;
+}
+
+#productos .destacados article h3{
+    color: skyblue;
+    font-size: 2rem;
+    padding-left: 50px;
+    font-family: Roboto, sans-serif;
+  }
+
+.btnXl{
+  width:30%;
+  height: 30px;
+  background-color: white;
+  color: darkviolet;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 50px;
+  font-size: 2rem;
+  /*display flex*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+/*<tienda dep>*/
+
+.secondNav{
+  background-color: white;
+  color:#671265 ;
+  padding: 5px ;
+  font-size: 1.3rem;
+  line-height: 1.6em;
+}
+   .secondNav img{
+      width: 80%;
+   }
+/*definimos el grid layout - 1 col y row auto*/
+
+   .contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "nav"
+    "header" 
+    "productos" 
+    "filtros" 
+    "aside" 
+    "pie" 
+    
+}
+ 
+/*nombres de las areas del layout*/
+
+ #mainNav{
+  grid-area: nav;
+ }
+
+ #header{
+  grid-area: header;
+ }
+
+ #filtros{
+  grid-area: filtros;
+ }
+
+ #productos{
+  grid-area: productos;
+ }
+
+ #aside{
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+ }
+
+ #footer{
+  grid-area: pie;
+ }
+
+/*media queries*/
+
+/* min-width: 768 definicion 2 cols y 5 rows*/
+
+@media (min-width:  768px){
+  .contenedor{
+      grid-template-columns: 30vw 70vw;
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas: 
+      "nav nav" 
+      "header header" 
+      "filtros productos" 
+      "aside aside" 
+      "pie pie";
+  }
+/*los productos van apilados*/
+#productos .galeria{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+/*reducimos el width de las figure al 90%*/
+  #productos .galeria figure{
+       width: 90%;  
+  }
+
+  #aside{
+   flex-direction: row;
+   justify-content:space-evenly ;
+  }
+}
+/* min-width: 1024 defino 3 cols con medidas vw y 4row */
+@media (min-width: 1024px){
+     .contenedor{
+         grid-template-columns: 20vw 70vw 10vw;
+         grid-template-rows: repeat(4, auto);
+         grid-template-areas:
+        "nav nav nav" 
+        "header header header" 
+        "filtros productos aside" 
+        "pie pie pie";
+     }
+
+/*cambio la direccion del aside a columna, flota a la derecha*/
+#aside{
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #DED5EA;
+}
+
+/*achico el tamaña de las img del aside al 70%*/
+#aside img{
+   width: 70%;
+}
+
+  #productos .galeria{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* ponemos al 100% el width de los produstos*/
+#productos .galeria figure{
+  width: 100%;
+}
+
+/*cambio la dirección de la botonera a row*/
+.botonera{
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*sacamos el margin bottom 0 al logo*/
+    .botonera img{
+     margin-bottom:0;
+    }
+}
+
+/* main-width:  1200px cambio la dirección de la galeria de productos a row*/
+@media (min-width: 1200px){
+ 
+  #productos .galeria{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*achico el width de los productos al 30%*/
+   #productos .galeria figure{
+      width: 30%;
+   }
+}
